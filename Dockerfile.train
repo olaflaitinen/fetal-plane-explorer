@@ -1,0 +1,22 @@
+# Training Dockerfile for Fetal Plane Explorer
+# Used to train MobileNetV3-Small model for ultrasound classification
+
+FROM python:3.12-slim
+
+WORKDIR /workspace
+
+# Install PyTorch and dependencies (CPU version for accessibility)
+RUN pip install --no-cache-dir \
+    torch==2.2.0+cpu \
+    torchvision==0.17.0+cpu \
+    --index-url https://download.pytorch.org/whl/cpu \
+    && pip install --no-cache-dir pillow "numpy<2"
+
+# Copy training scripts
+COPY modeling/ ./modeling/
+
+# Create output directory
+RUN mkdir -p assets/models
+
+# Default command runs training
+CMD ["python", "modeling/scripts/train.py", "--data_dir", "assets/datasets", "--output_dir", "assets/models"]

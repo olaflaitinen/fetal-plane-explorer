@@ -1,0 +1,37 @@
+# General
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
+tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+coverage/
+
+# Docker
+docker-context/
+
+# Assets
+assets/models/*.onnx
+assets/datasets/
+!assets/synthetic/placeholder.png
