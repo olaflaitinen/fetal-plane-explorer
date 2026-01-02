@@ -21,6 +21,7 @@
 ![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-%23000000.svg?style=for-the-badge&logo=onnx&logoColor=white)
 ![Material Design 3](https://img.shields.io/badge/Material%20Design%203-7C4DFF?style=for-the-badge&logo=materialdesign&logoColor=white)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+![Last Updated](https://img.shields.io/badge/last%20updated-01%20Jan%202026-brightgreen?style=for-the-badge&logo=github)
 
 **A research-only demonstration of fetal ultrasound standard plane classification with uncertainty estimation and explainability.**
 
@@ -155,7 +156,7 @@ If you use this repository in your research, please cite:
 @misc{fetal_plane_explorer,
   author = {Laitinen, Olaf},
   title = {Fetal Plane Explorer: Standard Plane Classification with Uncertainty and XAI},
-  year = {2024},
+  year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/olaflaitinen/fetal-plane-explorer}}
